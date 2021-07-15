@@ -4,7 +4,7 @@ import org.gradle.plugins.ide.idea.model.IdeaModel
 @Suppress("UNCHECKED_CAST")
 val libraryVersions = rootProject.extra.get("libraryVersions") as Map<String, String>
 
-version = libraryVersions["idscp2"] ?: error("IDSCP2 version not specified")
+version = libraryVersions["idscp2ex"] ?: error("IDSCP2 version not specified")
 
 apply(plugin = "java")
 apply(plugin = "com.google.protobuf")

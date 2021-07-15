@@ -161,10 +161,6 @@ subprojects {
         }
     }
 
-    signing {
-        useGpgCmd()
-        sign(publishing.publications.getByName("idscp2Library"))
-    }
 
     apply(plugin = "com.github.jk1.dependency-license-report")
 
