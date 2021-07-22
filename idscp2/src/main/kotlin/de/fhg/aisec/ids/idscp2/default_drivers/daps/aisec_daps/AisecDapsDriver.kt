@@ -389,7 +389,7 @@ class AisecDapsDriver(config: AisecDapsDriverConfig) : DapsDriver {
 
             // check if peer cert fingerprint is a valid fingerprint from the DAT
             if (!datCertFingerprints.contains(peerCertFingerprint)) {
-                LOG.warn("Ashok hook bypassing fingerprint check TEMP CHECK")
+                LOG.warn("TMF HACK: Bypassing fingerprint check.")
                 // throw DatException("Fingerprint of peer certificate does not match an expected fingerprint from DAT")
             }
         }
